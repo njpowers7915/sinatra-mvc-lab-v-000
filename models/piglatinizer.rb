@@ -14,7 +14,7 @@ class PigLatinizer
       shifted = array.insert(-1, array.delete_at(0))
       again = shifted.insert(-1, array.delete_at(0)).join
       final = again + "ay"
-    elsif (array[0] =~ (/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/) && array[1] =~ (/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/) && array[2] =~ (/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/)
+    elsif array[0] =~ (/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/) && array[1] =~ (/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/) && array[2] =~ (/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]/)
       shifted = array.insert(-1, array.delete_at(0))
       again = shifted.insert(-1, array.delete_at(0))
       third = again.insert(-1, array.delete_at(0)).join
