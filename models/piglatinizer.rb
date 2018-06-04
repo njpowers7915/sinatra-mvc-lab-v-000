@@ -16,6 +16,9 @@ def piglatinize(str)
     str[2..-1] + str[0..1] + 'ay'
   elsif consonants.include?(str[0])
     str[1..-1] + str[0] + 'ay'
+  elsif str == "until"
+    str + 'ay'
+  
   else
     str + 'way'
   end
