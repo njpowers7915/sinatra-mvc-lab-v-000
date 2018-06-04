@@ -24,6 +24,14 @@ def piglatinize(str)
     str + 'way'
   end
 end
+
+def piglatinize_sentence(string)
+  array = string.split(" ")
+  new_array = []
+  array.collect do |i|
+    i.piglatinize
+    
+    
   
   
   def fuck(words)
