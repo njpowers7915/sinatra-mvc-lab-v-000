@@ -13,7 +13,7 @@ class PigLatinizer
     elsif array[0] !=~ (/[aeiouAEIOU]/) && array[1] !=~(/[aeiouAEIOU]/)
       shifted = array.insert(-1, array.delete_at(0))
       again = shifted.insert(-1, array.delete_at(0)).join
-      final = shifted + "ay"
+      final = again + "ay"
     else
       shifted = array.insert(-1, array.delete_at(0)).join
       final = shifted + "ay"
