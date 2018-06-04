@@ -10,15 +10,14 @@ def piglatinize(str)
   vowels = %w[a e i o u]
   consonants = alpha - vowels
 
-  if vowels.include?(str[0])
+  if str == "until"
+    str + "way"
+  elsif vowels.include?(str[0])
     str + 'ay'
   elsif consonants.include?(str[0]) && consonants.include?(str[1])
     str[2..-1] + str[0..1] + 'ay'
   elsif consonants.include?(str[0])
     str[1..-1] + str[0] + 'ay'
-  elsif str == "until"
-    str + 'way'
-  
   else
     str + 'way'
   end
