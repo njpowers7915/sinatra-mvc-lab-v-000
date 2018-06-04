@@ -7,7 +7,7 @@ class PigLatinizer
   
   def piglatinize(sent)
     sent = sent.downcase
-    vowels = ['a', 'e', 'i', 'o', 'u']
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     words = sent.split(' ')
     result = []
 
