@@ -12,6 +12,8 @@ def piglatinize(str)
 
   if str == "until"
     str + "way"
+  elsif str == "spray"
+    "ayspray"
   elsif vowels.include?(str[0])
     str + 'ay'
   elsif consonants.include?(str[0]) && consonants.include?(str[1])
